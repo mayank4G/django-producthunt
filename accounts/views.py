@@ -26,7 +26,6 @@ def login(request):
             return redirect('home')
         else:
             return render(request, 'accounts/login.html', {'error':'Username or password doesnot exist.'})
-
     else:
         return render(request, 'accounts/login.html')
 def logout(request):
